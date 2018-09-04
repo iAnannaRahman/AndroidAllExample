@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#39CFB9">
+
+    <ImageView
+        android:id="@+id/imageViewStudent"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/user_icon"
+        android:layout_margin="10dp"/>
+
+    <TextView
+        android:id="@+id/textViewName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Miral Sarwar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_toRightOf="@+id/imageViewStudent"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"/>
+    <TextView
+        android:id="@+id/textViewCGPA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3.33"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:layout_below="@+id/textViewName"
+        android:layout_alignLeft="@+id/textViewName"/>
+
+    <ImageView
+        android:id="@+id/imageViewCall"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/call_icon"
+        android:layout_alignBottom="@+id/textViewCGPA"
+        android:layout_marginRight="10dp"/>
+
+</RelativeLayout>
